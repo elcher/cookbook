@@ -1,4 +1,4 @@
-Sitemap: https://elcher.github.io/data-science/sitemapindex.xml
+Sitemap: https://elcher.github.io/cookbook/sitemapindex.xml
 
 User-Agent: *
 Host: elcher.github.io

@@ -6,11 +6,11 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>https://elcher.github.io/data-science/rss.xml</loc>
-  <lastmod>2019-03-08T20:39:00Z</lastmod>
+  <loc>https://elcher.github.io/cookbook/rss.xml</loc>
+  <lastmod>2022-02-25T21:52:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://elcher.github.io/data-science/sitemap.xml</loc>
-  <lastmod>2019-03-08T20:43:00Z</lastmod>
+  <loc>https://elcher.github.io/cookbook/sitemap.xml</loc>
+  <lastmod>2022-02-25T21:58:00Z</lastmod>
  </sitemap>
 </sitemapindex>
