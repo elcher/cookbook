@@ -16,16 +16,16 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "Dora Feline"  # (translatable)
+BLOG_AUTHOR = "Longcan Huang"  # (translatable)
 BLOG_TITLE = "Um Om"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://elcher.github.io/data-science/"
+SITE_URL = "https://elcher.github.io/cookbook/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://elcher.github.io/data-science/"
 BLOG_EMAIL = "elcheur@gmail.com"
-BLOG_DESCRIPTION = "demo"  # (translatable)
+BLOG_DESCRIPTION = "It's just a plain cookbook."  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -105,7 +105,7 @@ TRANSLATIONS = {
 # this pattern is also used for metadata:
 #     something.meta -> something.pl.meta
 
-TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
+TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 # Links for the sidebar / navigation bar.  (translatable)
 # This is a dict.  The keys are languages, and values are tuples.
@@ -133,30 +133,28 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 #          else they won’t be highlighted when active.
 
 # NAVIGATION_LINKS = {
-    # DEFAULT_LANG: (
-        # ("/archive.html", "Archive"),
-        # ("/categories/", "Tags"),
-        # ("/rss.xml", "RSS feed"),
-    # ),
+# DEFAULT_LANG: (
+# ("/archive.html", "Archive"),
+# ("/categories/", "Tags"),
+# ("/rss.xml", "RSS feed"),
+# ),
 # }
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/index.html', 'Home', 'fa fa-home'),
-        ('/archive.html', 'Archives', 'fa fa-folder-open'),
-        ('/categories/index.html', 'Tags', 'fa fa-tags'),
-        ('/rss.xml', 'RSS', 'fa fa-rss'),
-        ('https://elcher.github.io', 'About me', 'fa fa-user'),
+        ("/index.html", "Home", "fa fa-home"),
+        ("/archive.html", "Archives", "fa fa-folder-open"),
+        ("/categories/index.html", "Tags", "fa fa-tags"),
+        ("/rss.xml", "RSS", "fa fa-rss"),
+        ("https://elcher.github.io", "About me", "fa fa-user"),
         # ('https://twitter.com/', 'My Twitter', 'fab fa-twitter'),
-        ('https://github.com/elcher', 'My Github', 'fab fa-github'),
+        ("https://github.com/elcher", "My Github", "fab fa-github"),
     )
 }
 
 # Alternative navigation links. Works the same way NAVIGATION_LINKS does,
 # although themes may not always support them. (translatable)
 # (Bootstrap 4: right-side of navbar, Bootblog 4: right side of title)
-NAVIGATION_ALT_LINKS = {
-    DEFAULT_LANG: {}
-}
+NAVIGATION_ALT_LINKS = {DEFAULT_LANG: {}}
 
 # Name of the theme to use.
 THEME = "zen"
@@ -170,18 +168,18 @@ THEME = "zen"
 THEME_CONFIG = {
     DEFAULT_LANG: {
         # Show the latest featured post in a large box, with the previewimage as its background.
-        'featured_large': False,
+        "featured_large": False,
         # Show the first (remaining) two featured posts in small boxes.
-        'featured_small': False,
+        "featured_small": False,
         # Show featured posts on mobile.
-        'featured_on_mobile': True,
+        "featured_on_mobile": True,
         # Show image in `featured_large` on mobile.
         # `featured_small` displays them only on desktop.
-        'featured_large_image_on_mobile': True,
+        "featured_large_image_on_mobile": True,
         # Strip HTML from featured post text.
-        'featured_strip_html': False,
+        "featured_strip_html": False,
         # Contents of the sidebar, If empty, the sidebar is not displayed.
-        'sidebar': ''
+        "sidebar": "",
     }
 }
 
@@ -246,7 +244,7 @@ PAGES = (
 # (e.g. 'Europe/Zurich')
 # Also, if you want to use a different time zone in some of your posts,
 # you can use the ISO 8601/RFC 3339 format (ex. 2012-03-30T23:00:00+02:00)
-TIMEZONE = "America/Chicago"
+TIMEZONE = "America/Los_Angeles"
 
 # If you want to use ISO 8601 (also valid RFC 3339) throughout Nikola
 # (especially in new_post), set this to True.
@@ -281,7 +279,7 @@ DATE_FANCINESS = 2
 # LOCALE_DEFAULT = locale to use for languages not mentioned in LOCALES; if
 # not set the default Nikola mapping is used.
 
-LOCALES = {'en': 'en_US'}
+LOCALES = {"en": "en_US"}
 # LOCALE_FALLBACK = None
 # LOCALE_DEFAULT = None
 
@@ -305,19 +303,19 @@ LOCALES = {'en': 'en_US'}
 # 'markdown' is Markdown
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
-    "rest": ('.rst', '.txt'),
-    "markdown": ('.md', '.mdown', '.markdown'),
-    "textile": ('.textile',),
-    "txt2tags": ('.t2t',),
-    "bbcode": ('.bb',),
-    "wiki": ('.wiki',),
-    "ipynb": ('.ipynb',),
-    "html": ('.html', '.htm'),
-    "orgmode": ('.org',),
+    "rest": (".rst", ".txt"),
+    "markdown": (".md", ".mdown", ".markdown"),
+    "textile": (".textile",),
+    "txt2tags": (".t2t",),
+    "bbcode": (".bb",),
+    "wiki": (".wiki",),
+    "ipynb": (".ipynb",),
+    "html": (".html", ".htm"),
+    "orgmode": (".org",),
     # PHP files are rendered the usual way (i.e. with the full templates).
     # The resulting files have .php extensions, making it possible to run
     # them without reconfiguring your server to recognize them.
-    "php": ('.php',),
+    "php": (".php",),
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
@@ -326,7 +324,7 @@ COMPILERS = {
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
-# ONE_FILE_POSTS = True
+ONE_FILE_POSTS = False
 
 # Preferred metadata format for new posts
 # "Nikola": reST comments, wrapped in a HTML comment if needed (default)
@@ -405,7 +403,7 @@ WRITE_TAG_CLOUD = False
 # If you do not want to display a tag publicly, you can mark it as hidden.
 # The tag will not be displayed on the tag list page, the tag cloud and posts.
 # Tag pages will still be generated.
-HIDDEN_TAGS = ['mathjax']
+HIDDEN_TAGS = ["mathjax"]
 
 # Only include tags on the tag list/overview page if there are at least
 # TAGLIST_MINIMUM_POSTS number of posts or more with every tag. Every tag
@@ -550,7 +548,7 @@ HIDDEN_CATEGORIES = []
 # If you do not want to display an author publicly, you can mark it as hidden.
 # The author will not be displayed on the author list page and posts.
 # Tag pages will still be generated.
-HIDDEN_AUTHORS = ['Guest']
+HIDDEN_AUTHORS = ["Guest"]
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
@@ -559,9 +557,7 @@ INDEX_PATH = ""
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
-FRONT_INDEX_HEADER = {
-    DEFAULT_LANG: ''
-}
+FRONT_INDEX_HEADER = {DEFAULT_LANG: ""}
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
@@ -649,21 +645,25 @@ REDIRECTIONS = []
 #         "rsync -rav --delete output/ joe@my.site:/srv/www/site",
 #     ]
 # }
-DEPLOY_COMMANDS = {"default": ["git add .",
-                               "git commit -m 'Update'",
-                               "git push origin src",
-                               "git subtree split --prefix output -b gh-pages",
-                               "git push -f origin gh-pages:gh-pages",
-                               "git branch -D gh-pages"]}
+DEPLOY_COMMANDS = {
+    "default": [
+        "git add .",
+        "git commit -m 'Update'",
+        "git push origin src",
+        "git subtree split --prefix output -b gh-pages",
+        "git push -f origin gh-pages:gh-pages",
+        "git branch -D gh-pages",
+    ]
+}
 # github_deploy configuration
 # For more details, read the manual:
 # https://getnikola.com/handbook.html#deploying-to-github
 # You will need to configure the deployment branch on GitHub.
-GITHUB_SOURCE_BRANCH = 'src'
-GITHUB_DEPLOY_BRANCH = 'gh-pages'
+GITHUB_SOURCE_BRANCH = "src"
+GITHUB_DEPLOY_BRANCH = "gh-pages"
 
 # The name of the remote where you wish to push to, using github_deploy.
-GITHUB_REMOTE_NAME = 'origin'
+GITHUB_REMOTE_NAME = "origin"
 
 # Whether or not github_deploy should commit to the source branch automatically
 # before deploying.
@@ -828,7 +828,7 @@ GITHUB_COMMIT_SOURCE = True
 # (the thumbnail has ``.thumbnail`` added before the file extension by default,
 # but a different naming template can be configured with IMAGE_THUMBNAIL_FORMAT).
 
-IMAGE_FOLDERS = {'images': 'images'}
+IMAGE_FOLDERS = {"images": "images"}
 # IMAGE_THUMBNAIL_SIZE = 400
 # IMAGE_THUMBNAIL_FORMAT = '{name}.thumbnail{ext}'
 
@@ -973,15 +973,15 @@ CONTENT_FOOTER_FORMATS = {
             "email": BLOG_EMAIL,
             "author": BLOG_AUTHOR,
             "date": time.gmtime().tm_year,
-            "license": LICENSE
-        }
+            "license": LICENSE,
+        },
     )
 }
 
 # A simple copyright tag for inclusion in RSS feeds that works just
 # like CONTENT_FOOTER and CONTENT_FOOTER_FORMATS
 RSS_COPYRIGHT = 'Contents © {date} <a href="mailto:{email}">{author}</a> {license}'
-RSS_COPYRIGHT_PLAIN = 'Contents © {date} {author} {license}'
+RSS_COPYRIGHT_PLAIN = "Contents © {date} {author} {license}"
 RSS_COPYRIGHT_FORMATS = CONTENT_FOOTER_FORMATS
 
 # To use comments, you can choose between different third party comment
@@ -1087,7 +1087,7 @@ MathJax.Hub.Config({
 # IPYNB_CONFIG = {}
 # With the following example configuration you can use a custom jinja template
 # called `toggle.tpl` which has to be located in your site/blog main folder:
-IPYNB_CONFIG = {'Exporter':{'template_file': 'toggle.tpl'}}
+IPYNB_CONFIG = {"Exporter": {"template_file": "toggle.tpl"}}
 
 # What Markdown extensions to enable?
 # You will also get gist, nikola and podcast because those are
@@ -1095,7 +1095,11 @@ IPYNB_CONFIG = {'Exporter':{'template_file': 'toggle.tpl'}}
 # Note: most Nikola-specific extensions are done via the Nikola plugin system,
 #       with the MarkdownExtension class and should not be added here.
 # The default is ['fenced_code', 'codehilite']
-MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.codehilite', 'markdown.extensions.extra']
+MARKDOWN_EXTENSIONS = [
+    "markdown.extensions.fenced_code",
+    "markdown.extensions.codehilite",
+    "markdown.extensions.extra",
+]
 
 # Options to be passed to markdown extensions (See https://python-markdown.github.io/reference/)
 # Default is {} (no config at all)
@@ -1321,7 +1325,7 @@ USE_BUNDLES = True
 # Add the absolute paths to directories containing themes to use them.
 # For example, the `v7` directory of your clone of the Nikola themes
 # repository.
-EXTRA_THEMES_DIRS = ['./themes/']
+EXTRA_THEMES_DIRS = ["./themes/"]
 
 # List of regular expressions, links matching them will always be considered
 # valid by "nikola check -l"
@@ -1385,7 +1389,7 @@ LATEX_FORMULA_RENDERER = "latex_formula_mathjax"
 #
 # The color must be given as an RGB triple with components in range [0, 1].
 # Here, (0, 0, 0) is black and (1, 1, 1) is white.
-LATEX_FORMULA_COLOR = (0., 0., 0.)
+LATEX_FORMULA_COLOR = (0.0, 0.0, 0.0)
 #
 # The formula scale determines the effective size of the formulae.
 # Check what looks good with your theme's main font.
@@ -1411,7 +1415,7 @@ LATEX_FORMULA_AS_DATAURI = False
 # Note that depending on your web server's configuration, you might experience
 # problems with .svgz files as the web server might treat them similar to .svg.gz
 # files and deliver them claiming that they are .svg files.
-LATEX_FORMULA_OUTPUT_FORMAT = 'png'
+LATEX_FORMULA_OUTPUT_FORMAT = "png"
 
 # Allows to include packages and define things in the preamble of the .tex files
 # used to render the formulae. When generating a temporary .tex file, the plugin
@@ -1434,4 +1438,4 @@ LATEX_FORMULA_ADDITIONAL_PREAMBLE = {
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}"""
-    }
+}

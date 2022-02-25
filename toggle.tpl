@@ -1,4 +1,4 @@
-{%- extends 'basic.tpl' -%}
+{% extends "classic/base.html.j2" %}
 
 {% block output_group %}
 <div class="output_wrapper output_hidden output_scroll">
