@@ -9,6 +9,7 @@ themes
 .doit.db
 .doit.db.db
 .venv
+pyvenv.cfg
 __pycache__
 *.pyc
 www
