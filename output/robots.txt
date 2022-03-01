@@ -1,4 +1,0 @@
-Sitemap: https://elcher.github.io/cookbook/sitemapindex.xml
-
-User-Agent: *
-Host: elcher.github.io
