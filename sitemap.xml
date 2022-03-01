@@ -7,18 +7,26 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://elcher.github.io/cookbook/</loc>
-  <lastmod>2022-02-25T20:48:00Z</lastmod>
+  <lastmod>2022-03-01T21:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elcher.github.io/cookbook/2022/</loc>
+  <lastmod>2022-03-01T21:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://elcher.github.io/cookbook/archive.html</loc>
-  <lastmod>2022-02-25T21:52:00Z</lastmod>
+  <lastmod>2022-03-01T21:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://elcher.github.io/cookbook/categories/</loc>
-  <lastmod>2020-03-03T18:25:00Z</lastmod>
+  <lastmod>2022-03-01T21:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://elcher.github.io/cookbook/pages/</loc>
-  <lastmod>2020-03-03T18:25:00Z</lastmod>
+  <lastmod>2022-03-01T21:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://elcher.github.io/cookbook/posts/test/</loc>
+  <lastmod>2022-03-01T21:34:00Z</lastmod>
  </url>
 </urlset>
