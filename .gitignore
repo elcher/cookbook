@@ -5,6 +5,7 @@ lib
 plugins
 output
 cache
+themes
 .doit.db
 .doit.db.db
 .venv
