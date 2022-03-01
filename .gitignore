@@ -2,6 +2,7 @@ drafts
 man
 bin
 lib
+plugins
 cache
 .doit.db
 .doit.db.db
