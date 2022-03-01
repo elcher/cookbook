@@ -3,6 +3,7 @@ man
 bin
 lib
 plugins
+output
 cache
 .doit.db
 .doit.db.db
